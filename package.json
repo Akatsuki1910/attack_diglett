@@ -1,0 +1,20 @@
+{
+  "name": "attack_diglett",
+  "type": "module",
+  "module": "./src/index.ts",
+  "scripts": {
+    "postinstall": "cp ./node_modules/@babylonjs/havok/lib/esm/HavokPhysics.wasm ./assets/HavokPhysics.wasm",
+    "build": "tsc && vite build",
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "@babylonjs/core": "^7.38.0",
+    "@babylonjs/havok": "^1.3.10",
+    "@babylonjs/loaders": "^7.39.0",
+    "@types/bun": "latest",
+    "sass": "^1.78.0",
+    "typescript": "^5.7.2",
+    "vanjs-core": "^1.5.2",
+    "vite": "^6.0.3"
+  }
+}
